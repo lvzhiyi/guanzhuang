@@ -1,0 +1,50 @@
+@import '~@/shared/styles/themes/variables';
+
+.ant-form {
+  .ant-form-item-label > label {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .ant-form-item-explain-error {
+    line-height: 20px;
+  }
+}
+
+@mpFormItemWidth: 300px;
+@showTimeFormItemWidth: 365px;
+
+.list-search-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+
+  .@{ant-prefix}-form-item {
+    width: @mpFormItemWidth;
+    margin-right: 26px;
+    margin-bottom: 16px;
+  }
+
+  .search-button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 264px;
+    margin-right: 0;
+
+    .@{ant-prefix}-form-item-control {
+      display: flex;
+      flex-direction: initial;
+      align-items: flex-end;
+    }
+
+    .spotecicon {
+      width: 16px;
+    }
+  }
+
+  .range-date-picker-show-time-form-item {
+    width: @showTimeFormItemWidth;
+  }
+}
